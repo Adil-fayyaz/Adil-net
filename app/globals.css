@@ -68,3 +68,41 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* Tema chiaro */
+:root.light-theme {
+  --app-bg: 0 0% 98%;
+  --app-text: 0 0% 10%;
+  --app-card: 0 0% 100%;
+  --app-card-border: 0 0% 85%;
+  --app-input-bg: 0 0% 95%;
+  --app-input-border: 0 0% 80%;
+}
+
+/* Tema scuro (default) */
+:root {
+  --app-bg: 0 0% 5%;
+  --app-text: 0 0% 98%;
+  --app-card: 0 0% 10%;
+  --app-card-border: 0 0% 20%;
+  --app-input-bg: 0 0% 15%;
+  --app-input-border: 0 0% 25%;
+}
+
+.app-bg {
+  background-color: hsl(var(--app-bg));
+}
+
+.app-text {
+  color: hsl(var(--app-text));
+}
+
+.app-card {
+  background-color: hsl(var(--app-card));
+  border-color: hsl(var(--app-card-border));
+}
+
+.app-input {
+  background-color: hsl(var(--app-input-bg));
+  border-color: hsl(var(--app-input-border));
+}
